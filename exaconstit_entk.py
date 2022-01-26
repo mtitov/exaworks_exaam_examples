@@ -11,13 +11,13 @@ import os
 import radical.entk as re
 
 RESOURCE_DESCRIPTION = {
-    'resource'     : '',
+    'resource'     : 'local.localhost',
     'project'      : '',
-    'queue'        : '',  # (None value will use default queue name from RP)
+    'queue'        : None,  # corresponding queue should be set for HPCs
     'access_schema': 'local',
-    'walltime'     : 10,  # total running time (in minutes)
-    'cpus'         : 1,   # total number of required cores
-    'gpus'         : 0    # total number of required gpus
+    'walltime'     : 10,    # total running time (in minutes)
+    'cpus'         : 1,     # total number of required cores
+    'gpus'         : 0      # total number of required gpus
 }
 
 CREDS_FILE_NAME = 'creds.json'  # see its format at the end of this file
